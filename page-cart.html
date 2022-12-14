@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cart </title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="css/choices.min.css">
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+
+   <div class="wrapper">
+      <div class="btn__up">&uarr;</div>
+
+
+      <header class="header  page-catalog__header">
+         <div class="container-big">
+            <div class="header__inner">
+               <div class="header__top">
+                  <a class="logo" href="#">
+                     <img class="logo__img" src="images/logo.svg" alt="logo">
+                  </a>
+                  <nav class="menu">
+                     <ul class="menu__list">
+                        <li class="menu__list-item">
+                           <a class="menu__list-link" href="#">About us</a>
+                        </li>
+                        <li class="menu__list-item">
+                           <a class="menu__list-link" href="page-catalog.html">Catalog</a>
+                        </li>
+                        <li class="menu__list-item">
+                           <a class="menu__list-link" href="#">Custom cakes</a>
+                        </li>
+                        <li class="menu__list-item">
+                           <a class="menu__list-link" href="#">Delivery</a>
+                        </li>
+                        <li class="menu__list-item">
+                           <a class="menu__list-link" href="#">Blog</a>
+                        </li>
+                        <li class="menu__list-item">
+                           <a class="menu__list-link" href="#">Contacts</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <div class="header__user">
+                     <ul class="user__list">
+                        <li class="user-list__item">
+                           <select class="multi-default select__language ">
+                              <option class="language__option" value="en" selected>EN</option>
+                              <option class="language__option" value="ru">RU</option>
+                              <option class="language__option" value="fr">FR</option>
+                           </select>
+                        </li>
+                        <li class="user-list__item">
+                           <a class="user-list__link" href="#">
+                              <svg class="user-list__img" width="27" height="26" viewBox="0 0 27 26" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M25.73 3.2256C24.5731 1.70666 22.7537 0.833381 20.1647 0.555647C19.9551 0.534354 19.734 0.521128 19.5064 0.521128C17.2108 0.521128 14.9232 1.59794 13.4999 3.30892C12.0751 1.59781 9.78949 0.520996 7.49487 0.520996C7.26726 0.520996 7.04759 0.533825 6.8336 0.555514C4.24829 0.833381 2.42979 1.70666 1.27217 3.22507C0.124864 4.73065 -0.249019 6.77121 0.161234 9.29065C0.760875 12.946 5.4936 17.3963 9.29578 20.9736L9.38294 21.0555C10.4418 22.0523 11.3567 22.9138 11.9526 23.5546C12.0331 23.645 12.7591 24.4396 13.5538 24.4396C14.3537 24.4396 15.0638 23.6326 15.1286 23.555C15.762 22.8687 16.79 21.895 17.8042 20.936C21.5638 17.3691 26.2439 12.9299 26.8371 9.28907C27.2497 6.7716 26.8777 4.73211 25.73 3.2256ZM25.8809 9.133C25.3404 12.4523 20.7923 16.7671 17.1188 20.2508C16.113 21.2032 15.0721 22.1872 14.4038 22.9123C14.2377 23.1078 13.8189 23.4714 13.5537 23.4714C13.2967 23.4714 12.8783 23.1372 12.67 22.9044C12.0438 22.2313 11.1185 21.3595 10.0463 20.3504L9.95917 20.268C6.26306 16.7915 1.66325 12.4649 1.11611 9.1342C0.751221 6.88825 1.06215 5.09779 2.04242 3.81175C3.02877 2.51671 4.63051 1.76657 6.93372 1.51846C7.11451 1.50047 7.30006 1.4891 7.49461 1.4891C9.70643 1.4891 11.9064 2.62556 13.0982 4.38534L13.4996 4.97559L13.9005 4.38534C15.0924 2.62556 17.2928 1.4891 19.5065 1.4891C19.7001 1.4891 19.887 1.50047 20.0645 1.51846C22.371 1.76604 23.9722 2.51619 24.96 3.81215C25.9391 5.09898 26.2496 6.88904 25.8809 9.133Z"
+                                    fill="#232324" />
+                              </svg>
+                           </a>
+                        </li>
+                        <li class="user-list__item">
+                           <a class="user-list__link basket" href="#">
+                              <svg class="user-list__img" width="32" height="33" viewBox="0 0 32 33" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M30.622 10.5824H8.21503L6.40603 3.11838H1.37903V4.18438H5.56703L10.765 25.6274C9.65703 25.9504 8.84203 26.9614 8.84203 28.1744C8.84203 29.6464 10.035 30.8404 11.508 30.8404C12.981 30.8404 14.174 29.6464 14.174 28.1744C14.174 27.5714 13.966 27.0214 13.629 26.5754H21.116C20.779 27.0214 20.571 27.5724 20.571 28.1744C20.571 29.6464 21.764 30.8404 23.236 30.8404C24.708 30.8404 25.902 29.6464 25.902 28.1744C25.902 26.7014 24.709 25.5094 23.236 25.5084H11.833L11.316 23.3754H26.284L30.621 10.5804L30.622 10.5824ZM13.107 28.1764C13.107 29.0584 12.39 29.7754 11.508 29.7754C10.626 29.7754 9.90903 29.0584 9.90903 28.1764C9.90903 27.2944 10.626 26.5774 11.508 26.5774C12.39 26.5774 13.107 27.2954 13.107 28.1764ZM24.836 28.1764C24.836 29.0584 24.118 29.7754 23.236 29.7754C22.354 29.7754 21.637 29.0584 21.637 28.1764C21.637 27.2944 22.354 26.5774 23.236 26.5774C24.118 26.5774 24.836 27.2954 24.836 28.1764ZM11.058 22.3114L8.47303 11.6494H29.135L25.52 22.3114H11.058Z"
+                                    fill="#232324" />
+                              </svg>
+                              <span class="basket__num">2</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+                  <button type="button" class="icon-menu"><span></span></button>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <div class="breadcrumbs">
+         <div class="container-big">
+            <div class="container">
+               <div class="breadcrumbs__body">
+                  <div class="breadcrumbs__inner">
+                     <ul class="breadcrumbs__list mobile-overflow ">
+                        <li class="breadcrumbs__list-item">
+                           <a class="breadcrumbs__list-item-link breadcrumbs__list-item-link--great "
+                              href="index.html">sweet art</a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                           <span class="breadcrumbs__list-item-link--color">cart</span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="page-title__box  page-cart-title__box">
+         <div class="container-big">
+            <div class="container">
+               <div class="page-title__inner">
+                  <h2 class="page-title">Shoping cart</h2>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+
+      <main class="main">
+
+         <section class="cart">
+            <div class="container-big">
+               <div class="container">
+
+                  <form class="cart__form" action="#">
+                     <div class="cart__inner">
+                        <div class="cart__header">
+                           <p class="cart__header-product">Product</p>
+                           <p class="cart__header-count">Count</p>
+                           <p class="cart__header-price">Price</p>
+                           <p class="cart__header-delete">Delete</p>
+                        </div>
+                        <div class="cart__items">
+
+                           <div class="cart__item">
+                              <div class="cart__item-product">
+                                 <div class="item-product__body">
+                                    <div class="item-product__pictures">
+                                       <img class="item-product__images" src="images/cart-img.png" alt="">
+                                    </div>
+                                    <div class="item-product__content">
+                                       <h5 class="item-product__title">
+                                          Birthday cake
+                                       </h5>
+                                       <h6 class="item-product__sub-title">
+                                          Deep blue
+                                       </h6>
+                                       <p class="item-product__weight">
+                                          2 850 g
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="cart__item-count">
+                                 <div class="quantity">
+                                    <button type="button" class="quantity__button  quantity__button_plus"></button>
+                                    <div class="quantity__input">
+                                       <input autocomplete="off" type="text" value="1">
+                                    </div>
+                                    <button type="button" class="quantity__button  quantity__button_minus"></button>
+                                 </div>
+                              </div>
+
+                              <div class="cart__item-price">3</div>
+                              <div class="cart__item-delete">4</div>
+
+
+                           </div>
+
+
+
+
+                        </div>
+                     </div>
+                  </form>
+
+               </div>
+            </div>
+         </section>
+
+
+
+
+      </main>
+
+
+      <footer class="footer">
+         <div class="container-big">
+            <div class="container">
+               <div class="footer__wrapper">
+                  <div class="footer__inner">
+                     <div class="footer__content">
+                        <ul class="footer__list">
+                           <li class="footer__logo-block">
+                              <a class="footer__logo" href="#">
+                                 <img class="footer__logo-img" src="images/footer-logo.svg" alt="">
+                              </a>
+                           </li>
+                           <li class="footer__menu-block">
+                              <nav class="footer__menu">
+                                 <ul class="footer__menu-list">
+                                    <li class="footer__menu-item">
+                                       <p class="footer__menu-title">Information</p>
+                                       <div class="footer__menu-item-box">
+                                          <a class="footer__menu-link" href="#">About us</a>
+                                          <a class="footer__menu-link" href="#">Delivery</a>
+                                          <a class="footer__menu-link" href="#">Payment</a>
+                                          <a class="footer__menu-link" href="#">Blog</a>
+                                          <a class="footer__menu-link" href="#">Contacts</a>
+                                       </div>
+                                    </li>
+                                    <li class="footer__menu-item">
+                                       <p class="footer__menu-title">Cakes</p>
+                                       <div class="footer__menu-item-box">
+                                          <a class="footer__menu-link" href="#">Catalog</a>
+                                          <a class="footer__menu-link" href="#">Custom cake</a>
+                                       </div>
+                                    </li>
+                                 </ul>
+                              </nav>
+                           </li>
+                           <li class="footer__contacts-block">
+                              <ul class="footer__contacts-list">
+                                 <li class="footer__contacts-item">
+                                    <p class="footer__contacts-title">Contacts</p>
+                                    <div class="footer__contacts-item-box">
+                                       <a class="footer__phone" href="tel:971582002020">+ 971 58 200 2020</a>
+                                       <a class="footer__mail" href="mailto:shop@sweetart.com">shop@sweetart.com</a>
+                                    </div>
+                                 </li>
+                                 <li class="footer__contacts-item">
+                                    <p class="footer__contacts-title  ">The Dubai Mall</p>
+                                    <div class="footer__contacts-item-box">
+                                       <p class="footer__contacts-text">Fashion Avenue extension,</p>
+                                       <p class="footer__contacts-text">Ground Level</p>
+                                    </div>
+                                 </li>
+                                 <li class="footer__contacts-item">
+                                    <ul class="footer__social-list" data-da=".footer__logo-block ,600,last">
+                                       <li class="footer__social-item">
+                                          <a class="footer__social" href="#">
+                                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                   d="M21 0H9C4.07203 0 0 4.07203 0 9V21C0 25.928 4.07203 30 9 30H21C25.928 30 30 25.928 30 21V9C29.9999 4.07203 25.9279 0 21 0ZM27 21C27 24.269 24.269 27 21 27H9C5.73096 27 3 24.269 3 21V9C3 5.73091 5.73096 3 9 3H21C24.269 3 27 5.73091 27 9V21Z"
+                                                   fill="white" fill-opacity="0.5" />
+                                                <path
+                                                   d="M15 7C10.5888 7 7 10.5888 7 15C7 19.4112 10.5888 23 15 23C19.4112 23 23 19.4112 23 15C23 10.5888 19.4112 7 15 7ZM15 20C12.3003 20 10 17.6998 10 15C10 12.3002 12.3003 10 15 10C17.6997 10 20 12.3002 20 15C20 17.6997 17.6997 20 15 20Z"
+                                                   fill="white" fill-opacity="0.5" />
+                                                <path
+                                                   d="M23 9C24.1046 9 25 8.10457 25 7C25 5.89543 24.1046 5 23 5C21.8954 5 21 5.89543 21 7C21 8.10457 21.8954 9 23 9Z"
+                                                   fill="white" fill-opacity="0.5" />
+                                             </svg>
+                                          </a>
+                                       </li>
+                                       <li class="footer__social-item">
+                                          <a class="footer__social" href="#">
+                                             <svg width="31" height="30" viewBox="0 0 31 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                   d="M26.3545 0H4.35449C2.12188 0 0.354492 1.76733 0.354492 4V26C0.354492 28.2327 2.1218 30 4.35449 30H15.3545V19H12.3545C11.9925 19 11.3559 19.3619 11.3545 19V15C11.3531 14.6361 11.9906 15 12.3545 15H15.3545V11C15.3545 7.12513 17.8978 5 21.3545 5H24.3545C24.7174 5 24.3545 5.63702 24.3545 6V9C24.3545 9.36283 24.7173 8.99978 24.3545 9H22.3545C20.4747 9 20.3545 10.6891 20.3545 12V15H24.3545C24.7481 15 24.4009 14.6091 24.3545 15V19C24.3153 19.3307 23.6875 19 23.3545 19H20.3545V30H26.3545C28.5871 30 30.3545 28.2326 30.3545 26V4C30.3544 1.76733 28.5872 0 26.3545 0Z"
+                                                   fill="white" fill-opacity="0.5" />
+                                             </svg>
+                                          </a>
+                                       </li>
+                                       <li class="footer__social-item">
+                                          <a class="footer__social" href="#">
+                                             <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                   d="M30.8107 3.54672C30.1441 3.84283 28.5207 4.37759 27.8107 4.54672C28.593 3.80193 29.4788 2.58651 29.8107 1.54672C29.9054 1.24987 30.0782 0.387778 29.8107 0.546715C28.8229 1.13366 26.9213 2.26511 25.8107 2.54672C25.7462 2.56306 25.8774 2.54672 25.8107 2.54672C25.6083 2.54672 25.9654 2.6833 25.8107 2.54672C24.629 1.50333 22.3886 0.546715 20.8107 0.546715C20.1279 0.546715 19.4875 0.336412 18.8107 0.546715C16.7135 1.19836 15.3183 3.4085 14.8107 5.54672C14.6202 6.34873 14.722 6.76559 14.8107 7.54672C14.8208 7.63648 14.8368 7.51733 14.8107 7.54672C14.7648 7.59823 14.8782 7.54672 14.8107 7.54672C14.8031 7.54672 14.8183 7.54745 14.8107 7.54672C10.2201 7.11944 5.73675 5.14254 2.81066 1.54672C2.66145 1.3633 2.92959 1.34235 2.81066 1.54672C2.23766 2.53155 1.81066 4.40052 1.81066 5.54672C1.81066 7.3033 2.58705 8.33992 3.81066 9.54672C3.2961 9.42449 2.27329 9.80414 1.81066 9.54672C1.58685 9.42215 1.81381 9.29025 1.81066 9.54672C1.77863 12.1562 2.52611 14.5011 4.81066 15.5467C4.76466 15.5478 4.85674 15.5467 4.81066 15.5467C4.44853 15.5467 4.17155 15.6158 3.81066 15.5467C3.55861 15.4985 3.7324 15.3019 3.81066 15.5467C4.55219 17.866 6.42532 20.1586 8.81066 20.5467C6.83097 21.8781 4.21012 22.5467 1.81066 22.5467H0.810663C0.580189 22.5467 0.869397 22.3231 0.810663 22.5467C0.752807 22.767 0.614128 23.4322 0.810663 23.5467C3.51447 25.1231 6.67838 25.5467 9.81066 25.5467C12.5524 25.5467 15.4942 24.6217 17.8107 23.5467C19.9342 22.5612 21.2333 21.3396 22.8107 19.5467C24.2801 17.8766 26.014 15.6789 26.8107 13.5467C27.5701 11.5142 27.8107 9.61722 27.8107 7.54672C27.8106 7.21426 27.5488 6.75966 27.8107 6.54672C28.8043 5.73847 30.0979 4.61487 30.8107 3.54672C31.1204 3.4091 30.9989 3.26467 30.8107 3.54672Z"
+                                                   fill="white" fill-opacity="0.5" />
+                                             </svg>
+                                          </a>
+                                       </li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="footer__copy-block">
+                     <p class="footer__copy">
+                        © 2022 Sweet Art Confectionery.
+                     </p>
+                     <a class="footer__polisy" href="#">
+                        Privacy policy
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+
+      <div class="hystmodal" id="massageName" aria-hidden="true">
+         <div class="hystmodal__wrap">
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+               <button data-hystclose class="hystmodal__close">Закрыть</button>
+               <div class="popup__body">
+                  Сообщение 2
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut eveniet sequi, ut reiciendis cum
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+   </div>
+
+
+
+
+
+
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
+   <script src="js/hystmodal.min.js"></script>
+   <script src="js/swiper-bundle.min.js"></script>
+   <script src="js/choices.min.js"></script>
+   <script src="js/main.min.js"></script>
+</body>
+
+</html>
