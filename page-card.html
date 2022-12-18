@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Cart </title>
+   <title>Card </title>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
@@ -21,8 +21,7 @@
    <div class="wrapper">
       <div class="btn__up">&uarr;</div>
 
-
-      <header class="header page-cart__header">
+      <header class="header page-card__header">
          <div class="container-big">
             <div class="header__top">
                <a class="logo" href="#">
@@ -85,7 +84,6 @@
                <button type="button" class="icon-menu"><span></span></button>
             </div>
          </div>
-
       </header>
 
       <div class="breadcrumbs">
@@ -99,7 +97,15 @@
                               href="index.html">sweet art</a>
                         </li>
                         <li class="breadcrumbs__list-item">
-                           <span class="breadcrumbs__list-item-link--color">cart</span>
+                           <a class="breadcrumbs__list-item-link breadcrumbs__list-item-link--great "
+                              href="page-catalog.html">Catalog</a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                           <a class="breadcrumbs__list-item-link breadcrumbs__list-item-link--great "
+                              href="page-cakes.html">Cakes</a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                           <span class="breadcrumbs__list-item-link--color">Deep blue </span>
                         </li>
                      </ul>
                   </div>
@@ -108,153 +114,186 @@
          </div>
       </div>
 
-      <div class="page-title__box  page-cart-title__box">
-         <div class="container-big">
-            <div class="container">
-               <div class="page-title__inner">
-                  <h2 class="page-title">Shoping cart</h2>
-               </div>
-            </div>
-         </div>
-      </div>
-
-
-
-
       <main class="main">
 
-         <section class="cart">
+         <section class="card">
             <div class="container-big">
                <div class="container">
-                  <form class="cart__form" action="#">
-                     <div class="cart__inner">
-                        <div class="cart__header">
-                           <p class="cart__header-product">Product</p>
-                           <p class="cart__header-count">Count</p>
-                           <p class="cart__header-price">Price</p>
-                           <p class="cart__header-delete">Delete</p>
+                  <div class="card__inner">
+                     <div class="card__slider-block">
+                        <div class="swiper card__slider-2 ">
+                           <div class="swiper-wrapper">
+                              <div class="swiper-slide big-slide">
+                                 <img class="slider__big-img" src="images/slider/card__slider-big.png" alt="">
+                              </div>
+                              <div class="swiper-slide big-slide">
+                                 <img class="slider__big-img" src="images/slider/card__slider-big.png" alt="">
+                              </div>
+                              <div class="swiper-slide big-slide">
+                                 <img class="slider__big-img" src="images/slider/card__slider-big.png" alt="">
+                              </div>
+                              <div class="swiper-slide big-slide">
+                                 <img class="slider__big-img" src="images/slider/card__slider-big.png" alt="">
+                              </div>
+                           </div>
+                           <div class="swiper-button-next card-button-next"></div>
+                           <div class="swiper-button-prev card-button-prev"></div>
                         </div>
-                        <div class="cart__items">
-                           <div class="cart__item">
-                              <div class="cart__item-product">
-                                 <div class="item-product__body">
-                                    <div class="item-product__pictures">
-                                       <img class="item-product__images" src="images/cart-img-1.png" alt="">
-                                    </div>
-                                    <div class="item-product__content">
-                                       <h5 class="item-product__title">
-                                          Birthday cake
-                                       </h5>
-                                       <h6 class="item-product__sub-title">
-                                          Deep gold
-                                       </h6>
-                                       <p class="item-product__weight">
-                                          2 850 g
-                                       </p>
-                                    </div>
-                                 </div>
+                        <div class="swiper card__slider">
+                           <div class="swiper-wrapper">
+                              <div class="swiper-slide small-slide">
+                                 <img class="slider__small-img" src="images/slider/card__slider-small.png" alt="">
                               </div>
-                              <div class="cart__item-count">
-                                 <div class="quantity">
-                                    <button type="button" class="quantity__button  quantity__button_minus"></button>
-                                    <div class="quantity__input">
-                                       <input id="deep-blue" autocomplete="off" type="text" value="1" name="cart-1">
-                                    </div>
-                                    <button type="button" class="quantity__button  quantity__button_plus"></button>
-                                 </div>
+                              <div class="swiper-slide small-slide">
+                                 <img class="slider__small-img" src="images/slider/card__slider-small.png" alt="">
                               </div>
-                              <div class="cart__item-price">
-                                 <div class="item-price__num">
-                                    $ 155
-                                 </div>
+                              <div class="swiper-slide small-slide">
+                                 <img class="slider__small-img" src="images/slider/card__slider-small.png" alt="">
                               </div>
-                              <div class="cart__item-delete">
-                                 <button class="cart__btn-close">
-                                    <svg class="cart__btn-close-img" width="16" height="16" viewBox="0 0 16 16"
-                                       fill="none" xmlns="http://www.w3.org/2000/svg">
-                                       <path
-                                          d="M2.22469 0.810956C1.83417 0.420436 1.201 0.420436 0.810476 0.810956C0.419946 1.20148 0.419946 1.83465 0.810476 2.22517L6.58523 7.9999L0.810536 13.7746C0.420006 14.1651 0.420006 14.7983 0.810536 15.1888C1.20106 15.5793 1.83423 15.5793 2.22475 15.1888L7.99943 9.4141L13.7741 15.1888C14.1646 15.5793 14.7978 15.5793 15.1883 15.1888C15.5788 14.7983 15.5788 14.1651 15.1883 13.7746L9.41363 7.9999L15.1883 2.22517C15.5789 1.83465 15.5789 1.20148 15.1883 0.810956C14.7978 0.420436 14.1647 0.420436 13.7741 0.810956L7.99943 6.5857L2.22469 0.810956Z"
-                                          fill="#F5F0F0" />
-                                    </svg>
-                                 </button>
+                              <div class="swiper-slide small-slide">
+                                 <img class="slider__small-img" src="images/slider/card__slider-small.png" alt="">
                               </div>
                            </div>
-                           <div class="cart__item">
-                              <div class="cart__item-product">
-                                 <div class="item-product__body">
-                                    <div class="item-product__pictures">
-                                       <img class="item-product__images" src="images/cart-img-2.png" alt="">
-                                    </div>
-                                    <div class="item-product__content">
-                                       <h5 class="item-product__title">
-                                          Cake
-                                       </h5>
-                                       <h6 class="item-product__sub-title">
-                                          Stawberry jam
-                                       </h6>
-                                       <p class="item-product__weight">
-                                          2 150 g
-                                       </p>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="cart__item-count">
-                                 <div class="quantity">
-                                    <button type="button" class="quantity__button  quantity__button_minus"></button>
-                                    <div class="quantity__input">
-                                       <input id="deep-gold" autocomplete="off" type="text" value="1" name="cart-2">
-                                    </div>
-                                    <button type="button" class="quantity__button  quantity__button_plus"></button>
-                                 </div>
-                              </div>
-                              <div class="cart__item-price">
-                                 <div class="item-price__num">
-                                    $ 260
-                                 </div>
-                              </div>
-                              <div class="cart__item-delete">
-                                 <button class="cart__btn-close">
-                                    <svg class="cart__btn-close-img" width="16" height="16" viewBox="0 0 16 16"
-                                       fill="none" xmlns="http://www.w3.org/2000/svg">
-                                       <path
-                                          d="M2.22469 0.810956C1.83417 0.420436 1.201 0.420436 0.810476 0.810956C0.419946 1.20148 0.419946 1.83465 0.810476 2.22517L6.58523 7.9999L0.810536 13.7746C0.420006 14.1651 0.420006 14.7983 0.810536 15.1888C1.20106 15.5793 1.83423 15.5793 2.22475 15.1888L7.99943 9.4141L13.7741 15.1888C14.1646 15.5793 14.7978 15.5793 15.1883 15.1888C15.5788 14.7983 15.5788 14.1651 15.1883 13.7746L9.41363 7.9999L15.1883 2.22517C15.5789 1.83465 15.5789 1.20148 15.1883 0.810956C14.7978 0.420436 14.1647 0.420436 13.7741 0.810956L7.99943 6.5857L2.22469 0.810956Z"
-                                          fill="#F5F0F0" />
-                                    </svg>
-                                 </button>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="cart__total-block">
-                           <div class="cart__total-box">
-                              <div class="cart__total-text">
-                                 Total:
-                              </div>
-                              <span class="cart__total-sum">
-                                 <span>$</span> <span>415</span>
-                              </span>
-                           </div>
-                           <a class="cart__total-btn" href="page-checkout.html">
-                              Checkout
-                           </a>
                         </div>
                      </div>
-                  </form>
+                     <div class="card__content-block">
+                        <form class="card__content-form" action="#">
+                           <div class="card__content-inner">
+                              <div class="card__content-title-box">
+                                 <h5 class="card__content-title">
+                                    Deep blue
+                                 </h5>
+                                 <h6 class="card__content-sub-title">
+                                    Birthday cake
+                                 </h6>
+                              </div>
+                              <div class="amount-box">
+                                 <span class="amount__money">$</span>
+                                 <span class="amount__price">255.00</span>
+                                 <span class="amount__vat">vat incl.</span>
+                              </div>
+                              <div class="card__count-box">
+                                 <div class="card__quantity-body">
+                                    <div class="quantity">
+                                       <button type="button" class="quantity__button  quantity__button_minus"></button>
+                                       <div class="quantity__input">
+                                          <input autocomplete="off" type="text" value="1" name="card">
+                                       </div>
+                                       <button type="button" class="quantity__button  quantity__button_plus"></button>
+                                    </div>
+                                 </div>
+                                 <button class="card__count-btn">
+                                    Add to cart
+                                 </button>
+                              </div>
+                              <ul class="card__info-box">
+                                 <li class="card__info-item">
+                                    <p class="card__info-left">
+                                       Weight
+                                    </p>
+                                    <p class="card__info-right">
+                                       2500 g
+                                    </p>
+                                 </li>
+                                 <li class="card__info-item">
+                                    <p class="card__info-left">
+                                       Servings
+                                    </p>
+                                    <p class="card__info-right">
+                                       12 pc
+                                    </p>
+                                 </li>
+                                 <li class="card__info-item">
+                                    <p class="card__info-left">
+                                       Filling
+                                    </p>
+                                    <p class="card__info-right">
+                                       Yoghurt
+                                    </p>
+                                 </li>
+                              </ul>
+                              <p class="card__description">
+                                 Who says the right place of fruits is just in the fridge or dining table? How about the
+                                 toppings on a cake?
+                                 If you love fruit so much then give this delicious flavorful fruit cake a try. We are
+                                 sure you won't regret the taste. A delicious choice for every occasion
+                              </p>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
                </div>
             </div>
          </section>
 
-         <section class="buy-slider">
+         <section class="card__tabs">
             <div class="container-big">
                <div class="container">
-                  <div class="section-title__box buy-slider-title__box">
+                  <h6 class="card__tabs-title">Tabs</h6>
+                  <div class="card__tabs-inner">
+                     <div class="tabs-box">
+                        <div class="tabs-box__inner">
+                           <div data-tabs="525" data-tabs-animate="500" class="tabs">
+                              <nav data-tabs-titles class="tabs__navigation">
+                                 <button type="button" class="tabs__title _tab-active">Description</button>
+                                 <button type="button" class="tabs__title">ingredients</button>
+                                 <button type="button" class="tabs__title">Additional information</button>
+                              </nav>
+                              <div data-tabs-body class="tabs__content">
+                                 <div class="tabs-body">
+                                    <p class="tabs-body__text">
+                                       Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                       eiusmod tempor
+                                       incididunt ut labore et dolore magna aliqua. Mauris augue neque gravida in
+                                       fermentum et. Dictum varius duis at consectetur lorem donec.
+                                       Netus et malesuada fames ac turpis egestas sed tempus urna. Mi bibendum neque
+                                       egestas congue. Aliquam etiam erat velit scelerisque. Ut consequat semper viverra
+                                       nam libero justo laoreet sit amet.
+                                    </p>
+                                 </div>
+                                 <div class="tabs-body">
+                                    <p class="tabs-body__text">
+                                       Ingredients Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                       eiusmod tempor
+                                       incididunt ut labore et dolore magna aliqua. Mauris augue neque gravida in
+                                       fermentum et. Dictum varius duis at consectetur lorem donec.
+                                       Netus et malesuada fames ac turpis egestas sed tempus urna. Mi bibendum neque
+                                       egestas congue. Aliquam etiam erat velit scelerisque. Ut consequat semper viverra
+                                       nam libero justo laoreet sit amet.
+                                    </p>
+                                 </div>
+                                 <div class="tabs-body">
+                                    <p class="tabs-body__text">
+                                       Additional information Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                       sed do eiusmod tempor
+                                       incididunt ut labore et dolore magna aliqua. Mauris augue neque gravida in
+                                       fermentum et. Dictum varius duis at consectetur lorem donec.
+                                       Netus et malesuada fames ac turpis egestas sed tempus urna. Mi bibendum neque
+                                       egestas congue. Aliquam etiam erat velit scelerisque. Ut consequat semper viverra
+                                       nam libero justo laoreet sit amet.
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="like">
+            <div class="container-big">
+               <div class="container">
+                  <div class="section-title__box like-title__box">
                      <div class="section-title__box-inner">
-                        <h2 class="section-title  buy-slider__section-title">
-                           Don't forget <span class="section-title--color  buy-slider__section-title--color "><span
+                        <h2 class="section-title  like__section-title">
+                           You may also like <span class="section-title--color  like__section-title--color "><span
                                  class="section-title--line">/</span>
-                              <span class="buy-slider__title--capital-letter">To </span> buy</span>
+                              Try it</span>
                         </h2>
-                        <div class="buy__slider-buttons-box" data-da=".buy-slider__inner ,650,last">
-                           <div class="swiper-button-prev buy__swiper-button-prev ">
+                        <div class="like__slider-buttons-box" data-da=".section-like__inner ,650,last">
+                           <div class="swiper-button-prev like__swiper-button-prev">
                               <svg width="13" height="22" viewBox="0 0 13 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                  <path d="M11 19.8342L2.16586 11L11 2.16589" stroke="#232324" stroke-width="2.94444"
@@ -266,7 +305,7 @@
                               <line x1="1" x2="1" y2="18" stroke="rgba(35, 35, 36, 0.33)" stroke-opacity="0.59"
                                  stroke-width="2" stroke-dasharray="2 2" />
                            </svg>
-                           <div class="swiper-button-next buy__swiper-button-next">
+                           <div class="swiper-button-next like__swiper-button-next">
                               <svg width="13" height="22" viewBox="0 0 13 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                  <path d="M1.99997 2.16583L10.8341 11L1.99997 19.8341" stroke="#232324"
@@ -279,108 +318,108 @@
                </div>
             </div>
             <div class="container-big  container-big__slider">
-               <div class="buy-slider__inner ">
-                  <div class="swiper buy__slider">
-                     <div class="swiper-wrapper  buy__slider-wrapper ">
-                        <div class="swiper-slide buy__slide">
+               <div class="section-like__inner">
+                  <div class="swiper  like__slider ">
+                     <div class="swiper-wrapper new__slider-wrapper ">
+                        <div class="swiper-slide like__slide ">
                            <div class="exemple__item popular__card-item  new__card-item">
                               <div class="exemple__item-block">
                                  <div class="block__pictures-inner">
                                     <a class="item-block__pictures" href="#">
                                        <img class="item-block__images swiper-no-swiping"
-                                          src="images/slider/buy-slider-01.png" alt="image fruit boom">
-                                    </a>
-                                 </div>
-                                 <div class="item-block__body">
-                                    <p class="item-block__title">
-                                       <a class="item-block__title-text" href="#">Candles</a>
-                                       <a class="item-block__title-sub-text" href="#">For celebrate</a>
-                                    </p>
-                                    <div class="item-block__text">
-                                       <div class="block__text-box">
-                                          <span class="block__text-price">11 $</span>
-                                          <span class="block__text-weight">3 pcs</span>
-                                       </div>
-                                    </div>
-                                    <a class="item-block__btn swiper-no-swiping" href="#">
-                                       Add to cart
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="swiper-slide buy__slide">
-                           <div class="exemple__item popular__card-item  new__card-item">
-                              <div class="exemple__item-block">
-                                 <div class="block__pictures-inner">
-                                    <a class="item-block__pictures" href="#">
-                                       <img class="item-block__images swiper-no-swiping"
-                                          src="images/slider/buy-slider-02.png" alt="image fruit boom">
-                                    </a>
-                                 </div>
-                                 <div class="item-block__body">
-                                    <p class="item-block__title">
-                                       <a class="item-block__title-text" href="#">Party Hat</a>
-                                       <a class="item-block__title-sub-text" href="#">For celebrate</a>
-                                    </p>
-                                    <div class="item-block__text">
-                                       <div class="block__text-box">
-                                          <span class="block__text-price">15 $</span>
-                                          <span class="block__text-weight">3 pcs</span>
-                                       </div>
-                                    </div>
-                                    <a class="item-block__btn swiper-no-swiping" href="#">
-                                       Add to cart
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="swiper-slide buy__slide">
-                           <div class="exemple__item popular__card-item  new__card-item">
-                              <div class="exemple__item-block">
-                                 <div class="block__pictures-inner">
-                                    <a class="item-block__pictures" href="#">
-                                       <img class="item-block__images swiper-no-swiping"
-                                          src="images/slider/buy-slider-03.png" alt="image fruit boom">
-                                    </a>
-                                 </div>
-                                 <div class="item-block__body">
-                                    <p class="item-block__title">
-                                       <a class="item-block__title-text" href="#">Black baloons</a>
-                                       <a class="item-block__title-sub-text" href="#">For celebrate</a>
-                                    </p>
-                                    <div class="item-block__text">
-                                       <div class="block__text-box">
-                                          <span class="block__text-price">26 $</span>
-                                          <span class="block__text-weight">7 pcs</span>
-                                       </div>
-                                    </div>
-                                    <a class="item-block__btn swiper-no-swiping" href="#">
-                                       Add to cart
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="swiper-slide buy__slide">
-                           <div class="exemple__item popular__card-item  new__card-item">
-                              <div class="exemple__item-block">
-                                 <div class="block__pictures-inner">
-                                    <a class="item-block__pictures" href="#">
-                                       <img class="item-block__images swiper-no-swiping"
-                                          src="images/slider/buy-slider-04.png" alt="image fruit boom">
+                                          src="images/popular/image-01.png" alt="image fruit boom">
                                     </a>
                                  </div>
                                  <div class="item-block__body">
                                     <p class="item-block__title">
                                        <a class="item-block__title-text" href="#">Fruit boom</a>
-                                       <a class="item-block__title-sub-text" href="#">Cupcake</a>
+                                       <a class="item-block__title-sub-text" href="#">Cake</a>
                                     </p>
                                     <div class="item-block__text">
                                        <div class="block__text-box">
                                           <span class="block__text-price">79 $</span>
-                                          <span class="block__text-weight">120 g</span>
+                                          <span class="block__text-weight">1200 g</span>
+                                       </div>
+                                    </div>
+                                    <a class="item-block__btn swiper-no-swiping" href="#">
+                                       Add to cart
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide like__slide ">
+                           <div class="exemple__item popular__card-item  new__card-item">
+                              <div class="exemple__item-block">
+                                 <div class="block__pictures-inner">
+                                    <a class="item-block__pictures" href="#">
+                                       <img class="item-block__images swiper-no-swiping"
+                                          src="images/popular/image-02.png" alt="image fruit boom">
+                                    </a>
+                                 </div>
+                                 <div class="item-block__body">
+                                    <p class="item-block__title">
+                                       <a class="item-block__title-text" href="#">Fruit boom</a>
+                                       <a class="item-block__title-sub-text" href="#">Cake</a>
+                                    </p>
+                                    <div class="item-block__text">
+                                       <div class="block__text-box">
+                                          <span class="block__text-price">79 $</span>
+                                          <span class="block__text-weight">1200 g</span>
+                                       </div>
+                                    </div>
+                                    <a class="item-block__btn swiper-no-swiping" href="#">
+                                       Add to cart
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide like__slide ">
+                           <div class="exemple__item popular__card-item  new__card-item">
+                              <div class="exemple__item-block">
+                                 <div class="block__pictures-inner">
+                                    <a class="item-block__pictures" href="#">
+                                       <img class="item-block__images swiper-no-swiping"
+                                          src="images/popular/image-03.png" alt="image fruit boom">
+                                    </a>
+                                 </div>
+                                 <div class="item-block__body">
+                                    <p class="item-block__title">
+                                       <a class="item-block__title-text" href="#">Fruit boom</a>
+                                       <a class="item-block__title-sub-text" href="#">Cake</a>
+                                    </p>
+                                    <div class="item-block__text">
+                                       <div class="block__text-box">
+                                          <span class="block__text-price">79 $</span>
+                                          <span class="block__text-weight">1200 g</span>
+                                       </div>
+                                    </div>
+                                    <a class="item-block__btn swiper-no-swiping" href="#">
+                                       Add to cart
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide like__slide ">
+                           <div class="exemple__item popular__card-item  new__card-item">
+                              <div class="exemple__item-block">
+                                 <div class="block__pictures-inner">
+                                    <a class="item-block__pictures" href="#">
+                                       <img class="item-block__images swiper-no-swiping"
+                                          src="images/popular/image-04.png" alt="image fruit boom">
+                                    </a>
+                                 </div>
+                                 <div class="item-block__body">
+                                    <p class="item-block__title">
+                                       <a class="item-block__title-text" href="#">Fruit boom</a>
+                                       <a class="item-block__title-sub-text" href="#">Cake</a>
+                                    </p>
+                                    <div class="item-block__text">
+                                       <div class="block__text-box">
+                                          <span class="block__text-price">79 $</span>
+                                          <span class="block__text-weight">1200 g</span>
                                        </div>
                                     </div>
                                     <a class="item-block__btn swiper-no-swiping" href="#">
@@ -392,10 +431,28 @@
                         </div>
                      </div>
                   </div>
-                  <div class="swiper-pagination buy__swiper-pagination "></div>
+                  <div class="swiper-pagination like__swiper-pagination"></div>
                </div>
             </div>
          </section>
+
+
+         <!-- <button data-popup="#massageName">Я открываю попап 2</button> -->
+
+         <!-- <div class="swiper">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">Slide 1</div>
+               <div class="swiper-slide">Slide 2</div>
+               <div class="swiper-slide">Slide 3</div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="swiper-scrollbar"></div>
+         </div> -->
 
       </main>
 
