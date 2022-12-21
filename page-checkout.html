@@ -126,8 +126,8 @@
          <section class="checkout">
             <div class="container-big">
                <div class="container">
+                  <h6 class="checkout__title">Checkout</h6>
                   <div class="checkout__inner">
-
                      <form class="checkout__form" action="#">
                         <div class="checkout-selection">
                            <div class="checkout-selection__inner">
@@ -149,10 +149,108 @@
                            </div>
                         </div>
                         <div class="checkout__form-inner">
-
+                           <div class="checkout__info-block">
+                              <div class="checkout__input-body">
+                                 <div class="checkout__input-contact-box">
+                                    <p class="checkout__form-title">
+                                       Contact details
+                                    </p>
+                                    <div class="checkout__input-name-box checkout__input-box">
+                                       <p class="checkout__input-name-title  checkout__input-title">Name</p>
+                                       <input class="checkout__input-name checkout__input" type="text"
+                                          placeholder="name" name="checkout-name">
+                                    </div>
+                                    <div class="checkout__input-phone-box checkout__input-box">
+                                       <p class="checkout__input-phone-title  checkout__input-title">Phone</p>
+                                       <input class="checkout__input-phone checkout__input" type="tel"
+                                          placeholder="+ 971 58 200 2020" name="checkout-phone">
+                                    </div>
+                                    <div class="checkout__input-mail-box checkout__input-box">
+                                       <p class="checkout__input-mail-title  checkout__input-title">Email</p>
+                                       <input class="checkout__input-mail checkout__input" type="email"
+                                          placeholder="your@email.com" name="checkout-mail">
+                                    </div>
+                                 </div>
+                                 <div class="checkout__input-adress-box">
+                                    <p class="checkout__form-title">
+                                       Add adress
+                                    </p>
+                                    <div class="checkout__input-box">
+                                       <p class="checkout__input-adress-title  checkout__input-title">Adress</p>
+                                       <input class="checkout__input-adress checkout__input" type="text"
+                                          placeholder="Main street 22" name="checkout-adress">
+                                    </div>
+                                    <div class=" adress-checkout__input-box  checkout__input-box">
+                                       <div class="input-floor__box">
+                                          <p class="checkout__input-floor-title  checkout__input-title">Floor</p>
+                                          <input class="checkout__input-floor checkout__input" type="number"
+                                             placeholder="234" name="checkout-floor">
+                                       </div>
+                                       <div class="input-flat__box">
+                                          <p class="checkout__input-flat-title  checkout__input-title">Flat</p>
+                                          <input class="checkout__input-flat checkout__input" type="number"
+                                             placeholder="800" name="checkout-flat">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="checkout__information-body">
+                                 <div class="checkout__input-information-box">
+                                    <p class="checkout__form-title">
+                                       Aditiional information
+                                    </p>
+                                    <p class="checkout__input-title">Comment</p>
+                                    <textarea class="information__textarea" placeholder="Your comment here"
+                                       name="information-textarea"></textarea>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="checkout__payment-block">
+                              <p class="checkout__form-title">
+                                 Payment method
+                              </p>
+                              <div class="checkout__payment-inner">
+                                 <div class="payment-method__box">
+                                    <div class="payment-method__online">
+                                       <div class="radio-btn__box">
+                                          <label>
+                                             <input class="input__base-box" type="radio" value="Pay online" name="pay"
+                                                checked>
+                                             <span class="radio-style"></span>
+                                             <span class="radio__title">Pay online</span>
+                                          </label>
+                                       </div>
+                                       <div class="method__online-images">
+                                          <img class="pay__img" src="images/pay/pay-visa-01.svg" alt="visa">
+                                          <img class="pay__img" src="images/pay/pay-master-02.svg" alt="master">
+                                          <img class="pay__img" src="images/pay/pay-apay-03.svg" alt="apay">
+                                          <img class="pay__img" src="images/pay/pay-gpay-04.svg" alt="gpay">
+                                       </div>
+                                    </div>
+                                    <div class="payment-method__courier">
+                                       <div class="radio-btn__box">
+                                          <label>
+                                             <input class="input__base-box" type="radio" value="Pay to courier"
+                                                name="pay">
+                                             <span class="radio-style"></span>
+                                             <span class="radio__title">Pay to courier</span>
+                                          </label>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="payment-sum__box">
+                                    <div class="payment-sum__box-inner">
+                                       <div class="payment-sum__total">Total:</div>
+                                       <div class="payment-sum__wrapper">
+                                          <span class="payment-sum__money">$</span>
+                                          <span class="payment-sum__num">415</span>
+                                       </div>
+                                    </div>
+                                    <button type="submit" class="payment-sum__btn">Pay</button>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-
-
                      </form>
                   </div>
                </div>
