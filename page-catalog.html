@@ -120,55 +120,84 @@
       </div>
 
 
-      <div class="catalog__exemple-select-block">
+      <div class="catalog-select__block">
          <div class="container-big">
             <div class="container">
-               <!-- =============================================== -->
-               <div class="products-content">
+               <div class="  catalog-select__content ">
                   <div class="filters">
 
-                     <div class="filters__item filters-price">
-                        <div class="filters-price__inner block  block__mobile" data-spollers>
-                           <button class="filters-price__title spoller-btn block__title" data-spoller>Price</button>
-                           <div class="filters-price__body">
 
-                              <div class="filters-price__slider" id="range-slider"></div>
-                              <div class="filters-price__inputs">
-                                 <div class="filters-price__input-box">
-                                    <p class="filters-price__input-title">min</p>
-                                    <label class="filters-price__label">
-                                       <span class="filters-price__text"></span>
-                                       <input type="number" min="50" max="1000" placeholder="50"
-                                          class="filters-price__input" id="input-0">
-                                       <span class="filters-price__text">$</span>
-                                    </label>
+                     <div class="filters__item filters-price">
+                        <form class="filters-price__form" action="#">
+                           <div class="filters-price__inner block  block__mobile" data-spollers>
+                              <button class="filters-price__title spoller-btn block__title" data-spoller>Price</button>
+                              <div class="filters-price__body">
+                                 <div class="filters-price__slider" id="price__range-slider"></div>
+                                 <div class="filters-price__inputs">
+                                    <div class="filters-price__input-box">
+                                       <p class="filters-price__input-title">min</p>
+                                       <label class="filters-price__label">
+                                          <span class="filters-price__text"></span>
+                                          <input type="number" min="50" max="1000" placeholder="50"
+                                             class="filters-price__input" id="input-0">
+                                          <span class="filters-price__text">$</span>
+                                       </label>
+                                    </div>
+                                    <div class="filters-price__input-box">
+                                       <p class="filters-price__input-title">max</p>
+                                       <label class="filters-price__label">
+                                          <span class="filters-price__text"></span>
+                                          <input type="number" min="50" max="1000" placeholder="1000"
+                                             class="filters-price__input" id="input-1">
+                                          <span class="filters-price__text">$</span>
+                                       </label>
+                                    </div>
                                  </div>
-                                 <div class="filters-price__input-box">
-                                    <p class="filters-price__input-title">max</p>
-                                    <label class="filters-price__label">
-                                       <span class="filters-price__text"></span>
-                                       <input type="number" min="50" max="1000" placeholder="1000"
-                                          class="filters-price__input" id="input-1">
-                                       <span class="filters-price__text">$</span>
-                                    </label>
-                                 </div>
+                                 <button type="submit" class="filters-price__btn">Apply</button>
                               </div>
-                              <button class="filters-price__btn">Apply</button>
                            </div>
-                        </div>
+                        </form>
                      </div>
 
-
-
-
+                     <div class="filters__item filters-weight">
+                        <form class="filters-weight__form" action="#">
+                           <div class="filters-weight__inner block  block__mobile" data-spollers>
+                              <button class="filters-weight__title spoller-btn block__title"
+                                 data-spoller>weight</button>
+                              <div class="filters-weight__body">
+                                 <div class="filters-weight__slider" id="weight__range-slider"></div>
+                                 <div class="filters-weight__inputs">
+                                    <div class="filters-weight__input-box">
+                                       <p class="filters-weight__input-title">min</p>
+                                       <label class="filters-weight__label">
+                                          <span class="filters-weight__text"></span>
+                                          <input type="number" min="1" max="100" placeholder="1"
+                                             class="filters-weight__input" id="input-00">
+                                          <span class="filters-weight__text">kg</span>
+                                       </label>
+                                    </div>
+                                    <div class="filters-weight__input-box">
+                                       <p class="filters-weight__input-title">max</p>
+                                       <label class="filters-weight__label">
+                                          <span class="filters-weight__text"></span>
+                                          <input type="number" min="1" max="100" placeholder="100"
+                                             class="filters-weight__input" id="input-11">
+                                          <span class="filters-weight__text">kg</span>
+                                       </label>
+                                    </div>
+                                 </div>
+                                 <button type="submit" class="filters-weight__btn">Apply</button>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
                   </div>
                </div>
-               <!-- =============================================== -->
             </div>
          </div>
       </div>
 
-
+      <!-- 
       <div class="catalog__select-block">
          <div class="container-big">
             <div class="container">
@@ -226,7 +255,7 @@
                </div>
             </div>
          </div>
-      </div>
+      </div> -->
 
 
 
