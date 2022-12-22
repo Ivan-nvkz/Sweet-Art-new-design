@@ -12,6 +12,7 @@
       rel="stylesheet">
    <link rel="stylesheet" href="css/swiper-bundle.min.css">
    <link rel="stylesheet" href="css/choices.min.css">
+   <link rel="stylesheet" href="css/nouislider.min.css">
    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -118,6 +119,56 @@
          </div>
       </div>
 
+
+      <div class="catalog__exemple-select-block">
+         <div class="container-big">
+            <div class="container">
+               <!-- =============================================== -->
+               <div class="products-content">
+                  <div class="filters">
+
+                     <div class="filters__item filters-price">
+                        <div class="filters-price__inner block  block__mobile" data-spollers>
+                           <button class="filters-price__title spoller-btn block__title" data-spoller>Price</button>
+                           <div class="filters-price__body">
+
+                              <div class="filters-price__slider" id="range-slider"></div>
+                              <div class="filters-price__inputs">
+                                 <div class="filters-price__input-box">
+                                    <p class="filters-price__input-title">min</p>
+                                    <label class="filters-price__label">
+                                       <span class="filters-price__text"></span>
+                                       <input type="number" min="50" max="1000" placeholder="50"
+                                          class="filters-price__input" id="input-0">
+                                       <span class="filters-price__text">$</span>
+                                    </label>
+                                 </div>
+                                 <div class="filters-price__input-box">
+                                    <p class="filters-price__input-title">max</p>
+                                    <label class="filters-price__label">
+                                       <span class="filters-price__text"></span>
+                                       <input type="number" min="50" max="1000" placeholder="1000"
+                                          class="filters-price__input" id="input-1">
+                                       <span class="filters-price__text">$</span>
+                                    </label>
+                                 </div>
+                              </div>
+                              <button class="filters-price__btn">Apply</button>
+                           </div>
+                        </div>
+                     </div>
+
+
+
+
+                  </div>
+               </div>
+               <!-- =============================================== -->
+            </div>
+         </div>
+      </div>
+
+
       <div class="catalog__select-block">
          <div class="container-big">
             <div class="container">
@@ -176,6 +227,9 @@
             </div>
          </div>
       </div>
+
+
+
 
 
       <main class="main">
@@ -676,6 +730,7 @@
    <script src="js/hystmodal.min.js"></script>
    <script src="js/swiper-bundle.min.js"></script>
    <script src="js/choices.min.js"></script>
+   <script src="js/nouislider.min.js"></script>
    <script src="js/main.min.js"></script>
 </body>
 
