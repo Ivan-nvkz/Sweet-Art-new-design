@@ -119,6 +119,7 @@
          </div>
       </div>
 
+      <!-- 
 
       <div class="catalog-select__block">
          <div class="container-big">
@@ -127,7 +128,7 @@
                   <div class="filters">
 
 
-                     <div class="filters__item filters-price">
+                      <div class="filters__item filters-price">
                         <form class="filters-price__form" action="#">
                            <div class="filters-price__inner block  block__mobile" data-spollers>
                               <button class="filters-price__title spoller-btn block__title" data-spoller>Price</button>
@@ -157,9 +158,9 @@
                               </div>
                            </div>
                         </form>
-                     </div>
+                     </div> 
 
-                     <div class="filters__item filters-weight">
+                      <div class="filters__item filters-weight">
                         <form class="filters-weight__form" action="#">
                            <div class="filters-weight__inner block  block__mobile" data-spollers>
                               <button class="filters-weight__title spoller-btn block__title"
@@ -190,12 +191,142 @@
                               </div>
                            </div>
                         </form>
-                     </div>
+                     </div> 
+
                   </div>
                </div>
             </div>
          </div>
       </div>
+               -->
+
+      <div class="catalog__select-block">
+         <div class="container-big">
+            <div class="container">
+               <div class="catalog__select-inner">
+                  <ul class="catalog__select-items">
+                     <li class="catalog__select-item">
+                        <form class="pastry__form" action="#">
+                           <div class="select__pastry">
+                              <div class="select__pastry-inner">
+                                 <select class="multi-default select__pastry ">
+                                    <option class="pastry__option" value="Cakes" selected>Cakes</option>
+                                    <option class="pastry__option" value="biscuit">Biscuit</option>
+                                    <option class="pastry__option" value="rolls">Rolls</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </form>
+                     </li>
+                     <li class="catalog__select-item">
+                        <div class="filters__item filters-price">
+                           <form class="filters-price__form" action="#">
+                              <div class="filters-price__inner block  block__mobile" data-spollers>
+                                 <button class="filters-price__title spoller-btn block__title"
+                                    data-spoller>Price</button>
+                                 <div class="filters-price__body">
+                                    <div class="filters-price__slider" id="price__range-slider"></div>
+                                    <div class="filters-price__inputs">
+                                       <div class="filters-price__input-box">
+                                          <p class="filters-price__input-title">min</p>
+                                          <label class="filters-price__label">
+                                             <span class="filters-price__text"></span>
+                                             <input type="number" min="50" max="1000" placeholder="50"
+                                                class="filters-price__input" id="input-0">
+                                             <span class="filters-price__text">$</span>
+                                          </label>
+                                       </div>
+                                       <div class="filters-price__input-box">
+                                          <p class="filters-price__input-title">max</p>
+                                          <label class="filters-price__label">
+                                             <span class="filters-price__text"></span>
+                                             <input type="number" min="50" max="1000" placeholder="1000"
+                                                class="filters-price__input" id="input-1">
+                                             <span class="filters-price__text">$</span>
+                                          </label>
+                                       </div>
+                                    </div>
+                                    <button type="submit" class="filters-price__btn">Apply</button>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                        <!-- <div class="select__catalog-price">
+                           <div class="select__catalog-price-inner">
+                              <p class="select__catalog-price-title">price</p>
+                              <select class="multi-default select__catalog-price ">
+                                 <option class="catalog-price__option" value="50-320$" selected>50 - 320 $</option>
+                                 <option class="catalog-price__option" value="321-499$">321 - 499 $ </option>
+                                 <option class="catalog-price__option" value="500-599$">500 - 599 $</option>
+                              </select>
+                           </div>
+                        </div> -->
+                     </li>
+                     <li class="catalog__select-item">
+                        <div class="filters__item filters-weight">
+                           <form class="filters-weight__form" action="#">
+                              <div class="filters-weight__inner block  block__mobile" data-spollers>
+                                 <button class="filters-weight__title spoller-btn block__title"
+                                    data-spoller>weight</button>
+                                 <div class="filters-weight__body">
+                                    <div class="filters-weight__slider" id="weight__range-slider"></div>
+                                    <div class="filters-weight__inputs">
+                                       <div class="filters-weight__input-box">
+                                          <p class="filters-weight__input-title">min</p>
+                                          <label class="filters-weight__label">
+                                             <span class="filters-weight__text"></span>
+                                             <input type="number" min="1" max="100" placeholder="1"
+                                                class="filters-weight__input" id="input-00">
+                                             <span class="filters-weight__text">kg</span>
+                                          </label>
+                                       </div>
+                                       <div class="filters-weight__input-box">
+                                          <p class="filters-weight__input-title">max</p>
+                                          <label class="filters-weight__label">
+                                             <span class="filters-weight__text"></span>
+                                             <input type="number" min="1" max="100" placeholder="100"
+                                                class="filters-weight__input" id="input-11">
+                                             <span class="filters-weight__text">kg</span>
+                                          </label>
+                                       </div>
+                                    </div>
+                                    <button type="submit" class="filters-weight__btn">Apply</button>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                        <!-- <div class="select__catalog-weight">
+                           <div class="select__catalog-weight-inner">
+                              <p class="select__catalog-weight-title">Weight</p>
+                              <select class="multi-default select__catalog-weight">
+                                 <option class="catalog-weight__option" value="2-3 KG" selected>2 - 3 KG</option>
+                                 <option class="catalog-weight__option" value="1-2 KG">1 - 2 KG</option>
+                                 <option class="catalog-weight__option" value="3-4 KG">3 - 4 KG</option>
+                                 <option class="catalog-weight__option" value="4-5 KG">4 - 5 KG</option>
+                              </select>
+                           </div>
+                        </div> -->
+                     </li>
+                     <li class="catalog__select-item catalog__select-item-sort">
+                        <form class="sort__form" action="#">
+                           <div class="select__catalog-sort">
+                              <div class="select__catalog-sort-inner">
+                                 <select class="multi-default select__catalog-sort ">
+                                    <option class="catalog-sort__option" value="sort" selected>Sort</option>
+                                    <option class="catalog-sort__option" value="sort-1">Sort-1</option>
+                                    <option class="catalog-sort__option" value="sort-2">Sort-2</option>
+                                    <option class="catalog-sort__option" value="sort-3">Sort-3</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </form>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+
 
       <!-- 
       <div class="catalog__select-block">
@@ -255,10 +386,8 @@
                </div>
             </div>
          </div>
-      </div> -->
-
-
-
+      </div>
+             -->
 
 
       <main class="main">
